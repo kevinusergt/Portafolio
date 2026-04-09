@@ -49,18 +49,42 @@ header{
 .title{
     padding: 0 8%;
     max-width: 50%;
+    max-height: 60%;
     font-size: 20px;
 }
 .title h1{
-    text-shadow: 3px 1px 5px;
-    font-size: 60px;
+    font-size: 3rem;
 }
 .image img{
     width: 70%;
-    height: auto;
+    height: 100%;
 
 }
-.Projects{
-    height: 30vh;
-    display:flex;
+.projects{
+    height: 35vh;
+    padding: 1% 2%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(219, 216, 213, 0.3);
+    border-radius: 10%;
+}
+.protitle{
+    height: 50px;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.indproject{
+    justify-content: space-between;
+    background-color: aquamarine;
+    height: 50%;
+    padding: 2%;
+
+}
+#inventary{
+    text-align: center;
+    
+    margin: 0 80% 0 0;
+    background-color: cadetblue;
 }

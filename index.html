@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/src/css/styles.css">
     <title>Portafolio</title>
 </head>
@@ -14,13 +16,14 @@
 <body>
     <header>
         <div class="logo">
-        <div>Kevin<span>Ruiz</span></div>
+            <div>Kevin<span>Ruiz</span></div>
         </div>
         <div class="nav-bar">
             <ul class="links">
-                <li><a href="#">About me</a></li>
+                <li><a href="#aboutme">About me</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="./src/views/mascotas.html">Pets</a></li>
             </ul>
         </div>
 
@@ -28,20 +31,30 @@
     <main>
         <section class="aboutme">
             <div class="title">
-            <h1>Greetings to all</h1><br>
-            <p>Hello, my name is Kevin Villalobos Ruiz, I am 20 years old, and I am from Barranquilla. I am currently in the learning stage of software development.
+                <h1>Greetings to all</h1><br>
+                <p>Hello, my name is Kevin Villalobos Ruiz, I am 20 years old, and I am from Barranquilla. I am
+                    currently in the learning stage of software development.
 
-            What I like about development is that it's an area that challenges me to keep learning and improve my logic.</p>      
+                    What I like about development is that it's an area that challenges me to keep learning and improve
+                    my logic.</p>
             </div>
             <div class="image">
-                <img src="/public/icons/3135768.png" alt="Profile icon">
+                <img src="/public/icons/3135768.webp" alt="Profile icon">
 
             </div>
         </section>
+        <section class="projects">
+            <div class="protitle">
+                <h2>Projects</h2>
+            </div>
+            <section class="indproject">
+                    <div id="inventary">
+                        <h5>Inventary management</h5><br>
+                        <a href="https://github.io" target="_blank"><button type="button">Go to project</button> </a>
 
-            <div class="title">
-            <h2>Projects</h2>
-            </div>  
+                </div>
+            </section>
+        </section>
 
     </main>
 
