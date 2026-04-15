@@ -47,12 +47,14 @@ header{
 
 #pets{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 1rem;
     padding: 5rem 0 0 0;
     border-bottom: 1px solid #ccc;
 }
 
-.dog, .cat, .bird{
+.dog, .cat, .bird, .rabbit, .hamster{
     align-content: center;
     text-align: center;
     background-color: #ccc;
@@ -63,7 +65,7 @@ header{
     margin: 0 0 2rem 0;
 
 }
-.dog img, .cat img, .bird img{
+.dog img, .cat img, .bird img, .rabbit img, .hamster img{
     width: 60%;
     height: 60%;
     transition: 0.4s ease;
