@@ -1,61 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <!-- Configuración básica -->
     <meta charset="UTF-8">
+
+    <!-- Archivos de estilos CSS -->
     <link rel="stylesheet" href="../css/Global.css">
     <link rel="stylesheet" href="../css/pets/header.css">
     <link rel="stylesheet" href="../css/pets/main.css">
     <link rel="stylesheet" href="../css/pets/footer.css">
-    <link rel="stylesheet" href="../css/pets/Responsives.css">
+    <link rel="stylesheet" href="../css/pets/responsives.css">
+
+    <!-- Título de la página -->
     <title>Mundo Mascotas</title>
-    
 </head>
+
 <body>
 
-<header>
-    <h1>🐾 Mundo Mascotas</h1>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#mascotas">Mascotas</a>
-        <a href="#contacta-nos">Contacto</a>
-        <a href="../../index.html">Portafolio</a>
-    </nav>
-</header>
+    <!-- Encabezado principal -->
+    <header>
+        <!-- Título con emoji -->
+        <h1>🐾 Mundo Mascotas</h1>
 
-<main>
+        <!-- Menú de navegación -->
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#mascotas">Mascotas</a>
+            <a href="#contacta-nos">Contacto</a>
 
-<section class="hero" id="inicio">
-    <h2>Bienvenido a Mundo Mascotas</h2>
-    <p>Encuentra información y cuidados para tus animales favoritos</p>
-</section>
+            <!-- Enlace de regreso al portafolio -->
+            <a href="../../index.html">Portafolio</a>
+        </nav>
+    </header>
 
-<section class="grid-section" id="mascotas">
-    <h2>Galería de Mascotas</h2>
-    <div class="grid-container">
-        <div class="grid-item"><img src="../../public/images/dog.webp" alt=""></div>
-        <div class="grid-item"><img src="../../public/images/cat.webp" alt=""></div>
-        <div class="grid-item"><img src="../../public/images/parrot.webp" alt=""></div>
-        <div class="grid-item"><img src="../../public/images/penguin.webp" alt=""></div>
-        <div class="grid-item"><img src="../../public/images/hamster.webp" alt=""></div>
-        <div class="grid-item"><img src="../../public/images/peces.webp" alt=""></div>
-    </div>
-</section>
-<section class="contacta-nos" id="contacta-nos">
-    <h2>Contacta con Nosotros</h2>
-    <p>¿Tienes preguntas o necesitas ayuda? ¡Contáctanos!</p>
-    <form action="#" method="post">
-        <input type="text" name="name" placeholder="Tu Nombre" required>
-        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-        <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+    <main>
 
-</main>
+        <!-- Sección de bienvenida -->
+        <section class="hero" id="inicio">
+            <h2>Bienvenido a Mundo Mascotas</h2>
+            <p>Encuentra información y cuidados para tus animales favoritos</p>
+        </section>
 
-<footer>
-    <p>© 2026 Mundo Mascotas</p>
-</footer>
+        <!-- Sección de galería de mascotas -->
+        <section class="grid-section" id="mascotas">
+            <h2>Galería de Mascotas</h2>
+
+            <!-- Contenedor en forma de grid -->
+            <div class="grid-container">
+
+                <!-- Item 1 -->
+                <div class="grid-item">
+                    <img src="../../public/images/dog.webp" alt="">
+                    <article>
+                        <h3>Perro</h3>
+                        <p>Los perros son compañeros leales y divertidos.</p>
+                    </article>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="grid-item">
+                    <img src="../../public/images/cat.webp" alt="">
+                    <article>
+                        <h3>Gato</h3>
+                        <p>Los gatos son animales independientes y cariñosos.</p>
+                    </article>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="grid-item">
+                    <img src="../../public/images/parrot.webp" alt="">
+                    <article>
+                        <h3>Loro</h3>
+                        <p>Los loros son pájaros inteligentes y sociables.</p>
+                    </article>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="grid-item">
+                    <img src="../../public/images/penguin.webp" alt="">
+                    <article>
+                        <h3>Pingüino</h3>
+                        <p>Los pingüinos son aves marinas que nadan increíblemente bien.</p>
+                    </article>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="grid-item">
+                    <img src="../../public/images/hamster.webp" alt="">
+                    <article>
+                        <h3>Hámster</h3>
+                        <p>Los hámsters son pequeños y fáciles de cuidar.</p>
+                    </article>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="grid-item">
+                    <img src="../../public/images/peces.webp" alt="">
+                    <article>
+                        <h3>Peces</h3>
+                        <p>Los peces son animales acuáticos que viven en aguas dulces o saladas.</p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section class="contacta-nos" id="contacta-nos">
+            <h2>Contacta con Nosotros</h2>
+            <p>¿Tienes preguntas o necesitas ayuda? ¡Contáctanos!</p>
+
+            <!-- Formulario de contacto -->
+            <form action="#" method="post">
+
+                <!-- Campo nombre -->
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+
+                <!-- Campo correo -->
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+
+                <!-- Campo mensaje -->
+                <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Mundo Mascotas</p>
+    </footer>
 
 </body>
+
 </html>

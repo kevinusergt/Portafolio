@@ -2,143 +2,197 @@
 <html lang="en">
 
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Conexión a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importación de fuentes -->
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/Global.css">    
+    <!-- Archivos CSS separados por secciones -->
+    <link rel="stylesheet" href="./src/css/Global.css">
     <link rel="stylesheet" href="./src/css/index/header.css">
     <link rel="stylesheet" href="./src/css/index/body.css">
     <link rel="stylesheet" href="./src/css/index/main.css">
     <link rel="stylesheet" href="./src/css/index/footer.css">
     <link rel="stylesheet" href="./src/css/index/responsives.css">
+
+    <!-- Título de la página -->
     <title>Portafolio</title>
 </head>
 
 <body>
+
+    <!-- Encabezado con logo y navegación -->
     <header>
         <div class="logo">
+            <!-- Nombre del portafolio -->
             <div>Kevin<span>Ruiz</span></div>
         </div>
+
+        <!-- Menú de navegación -->
         <div class="nav-bar">
             <ul class="links">
+                <!-- Enlaces a secciones internas -->
                 <li><a href="#aboutme">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+
+                <!-- Enlace a otra página -->
                 <li><a href="./src/views/mascotas.html">Pets</a></li>
             </ul>
         </div>
-
     </header>
+
     <main>
+
+        <!-- Sección "About Me" -->
         <section id="aboutme">
             <div class="title">
+
                 <h1>Greetings to all</h1><br>
 
-
-                <p id="about-text" style="display: block;  " >
-                    Hello, my name is Kevin Villalobos Ruiz, I am 20 years old, and I am from Barranquilla. I am
-                    currently in the learning stage of software development.
+                <!-- Texto principal visible -->
+                <p id="about-text" style="display: block;">
+                    Hello, my name is Kevin Villalobos Ruiz, I am 20 years old, and I am from Barranquilla. 
+                    I am currently in the learning stage of software development.
                 </p>
+
+                <!-- Texto oculto que se mostrará con JS -->
                 <p id="textChanged" style="display: none;">
-                    "What I like about development is that it's an area that challenges me to keep learning and improvemy logic."
+                    "What I like about development is that it's an area that challenges me to keep learning and improve my logic."
                 </p>
 
-                
+                <!-- Botones para interacción -->
                 <button id="changeTextBtn">Change Text</button>
                 <button id="toggleBtn">Show More</button>
 
-                
+                <!-- Texto adicional oculto -->
                 <p id="extraText" style="display: none;">
                     I am constantly improving my skills and learning new technologies.
                 </p>
             </div>
 
+            <!-- Imagen de perfil -->
             <div class="image">
                 <img src="./public/images/profile-picture.webp" alt="Profile icon">
             </div>
         </section>
 
+        <!-- Sección de proyectos -->
         <section id="projects">
             <div class="title">
                 <h2>Projects</h2>
             </div>
+
+            <!-- Contenedor de proyectos -->
             <div class="projects-flex">
+
+                <!-- Proyecto 1 -->
                 <div class="project-card">
                     <div class="content">
                         <div class="content-img">
-                        <img src="./public/images/inventory-management-system.webp" alt="Project 1">
+                            <img src="./public/images/inventory-management-system.webp" alt="Project 1">
                         </div>
+
                         <div class="content-description">
-                        <h3>inventory Management System</h3>
-                        <p>Description of Project 1</p>
+                            <h3>Inventory Management System</h3>
+                            <p>Description of Project 1</p>
                         </div>
                     </div>
-                    <div class="card-links">
-                        <a href="https://github.com/kevinusergt/InventoryManagement.git" target="_blank">View
-                                Details</a>
-                    </div>
+
+                    <!-- Enlace al repositorio -->
+                    <button>
+                        <a href="https://github.com/kevinusergt/InventoryManagement.git" target="_blank">
+                            View Details
+                        </a>
+                    </button>
                 </div>
 
+                <!-- Proyecto 2 -->
                 <div class="project-card">
                     <div class="content">
                         <div class="content-img">
-                        <img src="./public/images/Number-Guessing-Game-using-Python.webp" alt="Project 2">
+                            <img src="./public/images/Number-Guessing-Game-using-Python.webp" alt="Project 2">
                         </div>
+
                         <div class="content-description">
-                        <h3>Number Guessing Game</h3>
-                        <p>Description of Project 2</p>
+                            <h3>Number Guessing Game</h3>
+                            <p>Description of Project 2</p>
                         </div>
                     </div>
-                    <div class="card-links">
-                        <a href="https://github.com/kevinusergt/NumberGuessingGame.git" target="_blank">View
-                                Details</a>
-                    </div>
+
+                    <button type="button">
+                        <a href="https://github.com/kevinusergt/NumberGuessingGame.git" target="_blank">
+                            View Details
+                        </a>
+                    </button>
                 </div>
 
+                <!-- Proyecto 3 -->
                 <div class="project-card">
                     <div class="content">
                         <div class="content-img">
-                        <img src="./public/images/student-management-system.webp" alt="Project 3">
+                            <img src="./public/images/student-management-system.webp" alt="Project 3">
                         </div>
+
                         <div class="content-description">
-                        <h3>Student Management</h3>
-                        <p>Description of Project 3</p>
+                            <h3>Student Management</h3>
+                            <p>Description of Project 3</p>
                         </div>
                     </div>
-                    <div class="card-links">
-                        <a href="https://github.com/kevinusergt/Performance-test.git" target="_blank">View
-                                Details</a>
-                    </div>
+
+                    <button>
+                        <a href="https://github.com/kevinusergt/Performance-test.git" target="_blank">
+                            View Details
+                        </a>
+                    </button>
                 </div>
+
             </div>
         </section>
 
+        <!-- Sección de contacto -->
         <section id="contact">
             <div class="title">
                 <h2>Contact</h2>
             </div>
+
+            <!-- Formulario de contacto -->
             <div class="form">
                 <form class="contact-form">
+
+                    <!-- Campo de email -->
                     <input type="email" placeholder="Enter your email">
+
+                    <!-- Campo de nombre -->
                     <input type="text" placeholder="Enter your name">
+
+                    <!-- Área de mensaje -->
                     <textarea placeholder="Enter your message"></textarea>
+
+                    <!-- Botón de envío -->
                     <button type="submit">Send Message</button>
                 </form>
             </div>
         </section>
+
     </main>
 
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2026 Kevin Ruiz. All rights reserved.</p>
     </footer>
 
-    <!-- AGREGADO: script -->
+    <!-- Script de JavaScript -->
     <script src="./src/js/script.js"></script>
 
 </body>
+
 </html>
