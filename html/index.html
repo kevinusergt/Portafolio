@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shattered Riffs</title>
+    <link rel="shortcut icon" href="./assets/icons/AC-DC_logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__content">
+            <img src="./assets/icons/AC-DC_logo.webp" alt="">
+
+            <!-- Nav for desktop / hamburger for mobile -->
+            <nav class="nav">
+                <button class="menu-close"><img src="./assets/icons/cerrar.png" alt=""></button>
+                <ul class="nav__list">
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hint for JS (optional extra points) -->
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero__overlay">
+                <h2>Rock the Night</h2>
+                <p>Upcoming Tour</p>
+                <a href="#events" class="btn">View Events</a>
+            </div>
+        </section>
+
+        <!-- EVENTS -->
+        <section id="events" class="events container">
+            <h2>Upcoming Events</h2>
+
+            <!-- Extra points: table -->
+            <table class="events__table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>City</th>
+                        <th class="hide">Venue</th>
+                        <th>Tickets</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: hsl(0, 0%, 10%);">
+                        <td>15 May</td>
+                        <td>Madrid</td>
+                        <td class="hide">Sala Sol</td>
+                        <td><button>Buy</button></td>
+                    </tr>
+                    <tr style="background-color: hsl(0, 0%, 15%);">
+                        <td>18 May</td>
+                        <td>Barcelona</td>
+                        <td class="hide">Razzmatazz</td>
+                        <td><button>Buy</button></td>
+                    </tr>
+                    <tr style="background-color: hsl(0, 0%, 20%);">
+                        <td>22 May</td>
+                        <td>Valencia</td>
+                        <td class="hide">Moon Club</td>
+                        <td><button>Buy</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about container">
+            <img src="./assets/img/ac-dc.webp" alt="Band photo">
+
+            <div class="about__content">
+                <h2>About the Band</h2>
+
+                <article>
+                    <p>
+                        Shattered Riffs is a high-energy rock band known for powerful live performances
+                        and raw sound.
+                    </p>
+
+                    <!-- Required list -->
+                    <h3>Our Influences</h3>
+                    <ul>
+                        <li>Classic Rock</li>
+                        <li>Hard Rock</li>
+                        <li>Alternative</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- MEDIA -->
+        <section id="media" class="media container">
+            <h2>Multimedia</h2>
+            <div class="media-contain">
+            <div class="media__grid">
+                <img src="./assets/img/img-2.jpg" alt="">
+                <img src="./assets/img/img-3.jpg" alt="">
+                <img src="./assets/img/img-4.jpg" alt="">
+                <img src="./assets/img/img-5.jpg" alt="">
+                <img src="./assets/img/img-6.jpg" alt="">
+                <img src="./assets/img/img-7.jpg" alt="">
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXZknkAJdAs?si=hc0iOyVmy27syeaS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <div class="container footer__content">
+            <p>© 2026 AC⚡DC</p>
+
+            <!-- Another possible list -->
+            <div class="info-events">
+                <h3 style="font-size: 1.4rem;">Our events</h3>
+            <ul class="social">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Spotify</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
